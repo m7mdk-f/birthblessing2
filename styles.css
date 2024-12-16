@@ -1,0 +1,492 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Nunito', 'sans-serif';
+  }
+  html::-webkit-scrollbar{
+    display: none;
+  }
+  #homemenu::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ew:hover ul {
+  display: block;
+}
+
+.ew2:hover div {
+  display: grid;
+}
+
+.aa::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  bottom: -3px;
+  left: 0;
+  transition: .5s;
+  background-color: #333;
+}
+
+.aol::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  transition: .5s;
+  background-color: #333;
+}
+
+.aol:hover:after {
+  width: 100%;
+}
+
+.aa:hover:after {
+  width: 100%;
+}
+
+#m10 {
+  margin: 5% auto;
+}
+
+#m5 {
+  margin: 4% auto;
+}
+
+.hoverme:hover>div:first-child>div:first-child {
+  box-shadow: 0px 0px 20px rgb(208, 207, 207);
+}
+
+#showdivone:hover .firstdivhovershow {
+  display: grid;
+}
+
+#Toys:hover .hiddenmenu {
+  display: block;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#nextslider {
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.backg-150:hover {
+  background-position: center center;
+  background-size: 110% 110%;
+}
+
+.backg-150 {
+  transition-duration: 4s;
+  background-position: center center;
+}
+
+@media screen and (max-width:1200px) {
+  h1 {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+
+  .las section {
+    width: 95%;
+  }
+
+  .moha {
+    margin-top: 0;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .l {
+    transform: scale(.9);
+    margin-top: 4%;
+    font-size: 15px;
+    margin-left: 15%;
+  }
+
+  .cla {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width:991px) {
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .las section {
+    width: 95%;
+  }
+
+  .l {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  h2 {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .moha {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .l {
+    margin-left: 10%;
+
+  }
+
+}
+
+.co2 {
+  background-color: #ffc0cb;
+}
+
+.co {
+  background-color: #ff0000;
+}
+
+.shad {
+  box-shadow: 1px 1px 5px black;
+}
+
+.buthov {
+  transition: .5s;
+}
+
+.buthov:hover {
+  color: white;
+  background-color: #3d405b;
+}
+
+.buthov:active {
+  transform: scale(.9);
+}
+
+.link {
+  transition: .5s;
+
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.clike:focus {
+  border: 1px solid black;
+}
+
+.m15 {
+  margin-right: 15px;
+}
+
+
+.moh:hover div:first-child {
+  box-shadow: 1px 1px 10px 2px rgb(179, 187, 218);
+}
+
+.sec {
+  margin: 1% auto 0 auto;
+}
+
+@media screen and (max-width:350px) {
+  .moha {
+    width: 90%;
+    margin-left: auto;
+    font-size: 12px;
+  }
+
+  .kk {
+    padding-bottom: 20%;
+  }
+
+  .l {
+    margin-left: 15%;
+    transform: scale(.9);
+  }
+
+  .sec {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.anima {
+  animation-name: Anm;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+
+.a {
+  animation-name: Anm;
+  animation-delay: .2;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes Anm {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+#showdivone .ii {
+  display: none;
+}
+
+#showdivone li:hover .ii {
+  display: block;
+}
+
+@layer base {
+
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 365px) {
+    .container {
+      max-width: 580px;
+    }
+  }
+
+  body {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .3px;
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    line-height: 37px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+
+
+
+  @media screen and (max-width:1200px) {
+    h1 {
+      font-size: 28px;
+      line-height: 33.6px;
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: 21.6px;
+    }
+  }
+
+  @media screen and (max-width:991px) {
+    h1 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .container {
+      width: 95%;
+    }
+
+    h2 {
+      font-size: 16px;
+      line-height: 19.3px;
+    }
+  }
+
+  @media screen and (max-width:640px) {
+    h2 {
+      font-size: 14px;
+      line-height: 16.8px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .myinput>input:focus~label,
+  .myinput>input:valid~label{
+    top: 0px;
+    left: 8px;
+    font-size: 12px;
+  }
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+#circleAnime {
+  background-size: 100% 100%;
+  content: "";
+  animation-name: rotate360;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cont {
+  content: "";
+}
+
+@keyframes scrolup {
+  from {
+    transform: translateY(5%);
+  }
+}
+
+.up-hover:hover i {
+  transform: translateX(15px);
+}
+
+@keyframes menuani {
+  from{
+    width: 0;
+    transform: translateX(-150px);
+  }
+  to{
+    width: 50vw;
+  }
+}
+
+.menuani{
+  animation-name: menuani;
+  animation-timing-function: ease-in-out;
+  animation-duration: .8s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#colorful:hover{
+  padding-right: 45px;
+}

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account – Birthblessing-toys</title>
+    <link rel="shortcut icon" href="./images/icons&logo/short cut icon.png">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="./styles/tailwindcss.css">
+</head>
+
+<body id="body" class="font-Nunito">
+    <style>
+        #circleAnime {
+            background-image: url(./images/icons&logo/color-circle.webp);
+        }
+        .container {
+            width: 90%;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        @media (min-width: 1400px) and (max-width: 1629px) {
+            .container {
+                max-width: 1370px;
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            .container {
+                max-width: 1170px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+    </style>
+
+    <a href="#scrollshowen" id="scrollup"
+        class="bg-main-color newcolor hidden hover:bg-black fixed z-100 bottom-5% right-1% rounded-10 p-3">
+        <svg class="w-15px h-15px fill-white" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z" />
+        </svg>
+    </a>
+
+
+
+
+
+    <!-- here<< -->
+    <!-- Header<<<<<<<<< -->
+    <header id="scrollshowen" class="bg-white">
+
+
+
+
+        <div class="bg-main-color newcolor text-white">
+            <nav class="container   justify-between mx-auto py-8px text-base hidden md:flex">
+                <div class="px-15px">
+                    <p class="font-medium tracking-wide">Free Shipping Over $120</p>
+                </div>
+                <div class="flex px-15px">
+                    <div class="mr-5 relative">
+                        <button onclick="showhidden('clickshow','clickshow2')">
+                            <p class="inline text-sm">United States (USD $)</p>
+                            <i class="fa-solid fa-chevron-down align-middle text-vs"></i>
+                        </button>
+                        <div id="clickshow"
+                            class="hidden bodyclick text-black font-bold absolute z-1000 bg-gray-200/95 p-3 rounded-lg">
+                            <a href="#" class="text-sm">Germany (EUR €)</a>
+                            <a href="#" class="text-sm">Germany (EUR €)</a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <button onclick="showhidden('clickshow2','clickshow')">
+                            <p class="inline text-sm">English</p>
+                            <i class="fa-solid fa-chevron-down align-middle text-vs"></i>
+                        </button>
+                        <div id="clickshow2"
+                            class="hidden bodyclick right-2 text-black font-bold absolute z-1000 bg-gray-200/95 p-3 rounded-lg">
+                            <a href="#" class="text-sm">Marwan</a>
+                            <a href="#" class="text-sm">Mahammed</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <nav class="container  flex justify-between mx-auto p-3">
+            <div class="flex justify-between items-center w-auto lg:w-75% xl:w-75% xxl:w-67%">
+                <div class="lg:hidden flex items-center mr-3">
+                    <button id="navicon" class="my-auto">
+                        <svg onclick="bodyoverflowhidden('body','hidden')"
+                            class=" w-7 h-7 text-main-color hover:text-black " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+
+
+
+
+                <!-- mobile -->
+                <!-- here.. -->
+                <!-- ...................................................... -->
+
+
+                <div id="homemenu"
+                    class="hidden overflow-x-hidden bg-opositnew overflow-scroll w-100vw absolute top-0 left-0 right-0 bottom-0 z-100">
+                    <button onclick="bodyoverflowhidden('body','scroll')" id="close1"
+                        class="fixed top-0 left-0 right-0 bottom-0 w-100vw h-100vh cursor-default"></button>
+                    <ul
+                        class="bg-white menuani md:text-sm border-r-full overflow-hidden text-left text-black b-5 absolute z-1000 w-50vw p-5 left-0 top-0 rounded-br-10">
+
+                        <li class="py-3 flex justify-between items-center">
+                            <h3 class="text-sm md:text-lg">MENU</h3>
+                            <button onclick="bodyoverflowhidden('body','scroll')" type="button" id="close"><i
+                                    class="fa-solid fa-xmark md:text-3xl leading-5"></i></button>
+                        </li>
+                        <hr class="w-150% relative right-10">
+                        <li class="w-full pl-3 py-3 text-left">
+                            <a href="./index.html" class="text-sm aa relative w-full inline-block">Home</a>
+                        </li>
+                        <hr class="w-150% relative right-10">
+                        <button id="iconplus" class="w-full pl-3 py-3 text-left flex justify-between items-center">
+                            <a href="#" class="text-sm aa relative">Toys</a>
+                            <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                        </button>
+                        <ul id="menunun" class="hidden w-full text-ssc md:text-sm">
+                            <li><a href="./product.html"
+                                    class="duration-500 hover:text-main-color pl-3 my-3 w-full inline-block">Baby
+                                    Rattles</a></li>
+                            <li><a href="./product.html"
+                                    class="duration-500 hover:text-main-color pl-3 my-3 w-full inline-block">Musical
+                                    Toys</a></li>
+                            <li><a href="./product.html"
+                                    class="duration-500 hover:text-main-color pl-3 my-3 w-full inline-block">Soft
+                                    Toys</a></li>
+                            <li><a href="./product.html"
+                                    class="duration-500 hover:text-main-color pl-3 my-3 w-full inline-block">Bath
+                                    Toys</a></li>
+                        </ul>
+                        <hr class="w-150% relative right-10">
+
+                        <button id="mobbtn" class="w-full pl-3 py-3 text-left flex justify-between items-center">
+                            <a href="#" class="text-sm aa relative">Shop</a>
+                            <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                        </button>
+
+                        <ul id="mblclckshow" class="hidden">
+
+
+                            <div class="w-full mb-5">
+                                <button id="clck-1" class="flex justify-between items-center w-full">
+                                    <h3 class="my-3 text-sm inline">Board Games</h3>
+                                    <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                                </button>
+                                <ul id="show-1" class="text-ssc hidden">
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Bath
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Musical
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Soft
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Baby
+                                            Rattles</a>
+                                    </li>
+                                </ul>
+                                <a href="./nothing.html" class="w-full">
+                                    <img class="rounded-10" src="./images/header/header div-1 (1) img.avif" alt="Toys">
+                                </a>
+                            </div>
+
+                            <div class="w-full mb-5">
+                                <button id="clck-2" class="flex justify-between items-center w-full">
+                                    <h3 class="text-sm my-3">Board Games</h3>
+                                    <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                                </button>
+                                <ul id="show-2" class="text-ssc hidden">
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Bath
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Musical
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Soft
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Baby
+                                            Rattles</a>
+                                    </li>
+                                </ul>
+                                <a href="./nothing.html">
+                                    <img class="rounded-10" src="./images/header/header div-1 (2) img.jpg" alt="Toys">
+                                </a>
+                            </div>
+
+                            <div class="w-full mb-5">
+                                <button id="clck-3" class="flex justify-between items-center w-full">
+                                    <h3 class="text-sm my-3">Board Games</h3>
+                                    <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                                </button>
+                                <ul id="show-3" class="text-ssc hidden">
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Bath
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Musical
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Soft
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Baby
+                                            Rattles</a>
+                                    </li>
+                                </ul>
+                                <a href="./nothing.html">
+                                    <img class="rounded-10" src="./images/header/header div-1 (3) img.jpg" alt="Toys">
+                                </a>
+                            </div>
+
+
+                            <div class="w-full mb-5">
+                                <button id="clck-4" class="flex justify-between items-center w-full">
+                                    <h3 class="text-sm my-3">Board Games</h3>
+                                    <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                                </button>
+                                <ul id="show-4" class="text-ssc hidden">
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Bath
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Musical
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Soft
+                                            Toys</a>
+                                    </li>
+                                    <li>
+                                        <a href="./product.html"
+                                            class="duration-500 hover:text-main-color inline-block w-full mb-3">Baby
+                                            Rattles</a>
+                                    </li>
+                                </ul>
+                                <a href="./nothing.html">
+                                    <img class="rounded-10" src="./images/header/header div-1 (4) img.jpg" alt="Toys">
+                                </a>
+                            </div>
+                        </ul>
+
+
+                        <hr class="w-150% relative right-10">
+                        <li class="w-full pl-3 py-3 text-left">
+                            <a href="./product.html" class="text-sm aa relative w-full inline-block">Bath Toys</a>
+                        </li>
+                        <hr class="w-150% relative right-10">
+                        <li class="w-full pl-3 py-3 text-left">
+                            <a href="./product.html" class="text-sm aa relative w-full inline-block">Soft Toys</a>
+                        </li>
+                        <hr class="w-150% relative right-10">
+                        <button id="clck-5" class="w-full pl-3 py-3 text-left flex justify-between items-center">
+                            <a href="./News.html" class="text-sm aa relative">Blogs</a>
+                            <i class="fa-solid fa-plus text-sm md:text-xl"></i>
+                        </button>
+                        <div id="show-5" class="hidden mt-5">
+                            <ul class="">
+                                <div class="text-center mb-4">
+                                    <div>
+                                        <img class="mb-1 rounded-xl" src="./images/header/header div-2 (1) img.webp"
+                                            alt="Toys">
+                                        <a class="mb-1 text-ssc leading-3 md:text-sm" href="./News.html">Donec
+                                            Placerat,
+                                            Dolor Ac
+                                            Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center mb-4">
+                                    <div>
+                                        <img class="mb-1 rounded-xl" src="./images/header/header div-2 (2) img.webp"
+                                            alt="Toys">
+                                        <a class="mb-1 text-ssc leading-3 md:text-sm" href="./News.html">Donec
+                                            Placerat,
+                                            Dolor Ac
+                                            Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center mb-4">
+                                    <div>
+                                        <img class="mb-1 rounded-xl" src="./images/header/header div-2 (3) img.webp"
+                                            alt="Toys">
+                                        <a class="mb-1 text-ssc leading-3 md:text-sm" href="./News.html">Donec
+                                            Placerat,
+                                            Dolor Ac
+                                            Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center">
+                                    <div>
+                                        <img class="mb-1 rounded-xl" src="./images/header/header div-2 (4) img.webp"
+                                            alt="Toys">
+                                        <a class="mb-1 text-ssc leading-3 md:text-sm" href="./News.html">Donec
+                                            Placerat,
+                                            Dolor Ac
+                                            Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="my-auto">
+                    <a href="./index.html"><img class="w-[135px] lg:w-[210px] xl:w-[230px]"
+                            src="./images/icons&logo/logo_499870f1-a3bf-447b-b624-77f977e855b7_230x.webp" alt="logo">
+                    </a>
+                </div>
+
+                <ul id="showdivone"
+                    class="hidden lg:flex pl-4 justify-between items-center flex-wrap lg:w-70% xl:w-65%">
+                    <li class=" py-3 mx-8px">
+                        <a href="./index.html"
+                            class="text-lg font-medium leading-7 aa relative duration-500 hover:text-main-color">Home</a>
+                    </li>
+                    <li class=" py-3 mx-8px">
+                        <a href="./product.html"
+                            class="text-lg font-medium leading-7 aa relative duration-500 hover:text-main-color">Toys<i
+                                class="fa-solid fa-chevron-down align-middle text-vs ml-2 relative"></i>
+                        </a>
+                        <ul
+                            class="absolute top-24 ii z-40 bg-white border-1 border-solid w-13% xl:w-11% pl-4 py-4 rounded-lg text-bgs">
+                            <li><a href="./product.html" class="duration-500 hover:text-main-color">Baby Rattles</a>
+                            </li>
+                            <li><a href="./product.html" class="duration-500 hover:text-main-color">Musical Toys</a>
+                            </li>
+                            <li><a href="./product.html" class="duration-500 hover:text-main-color">Soft Toys</a></li>
+                            <li><a href="./product.html" class="duration-500 hover:text-main-color">Bath Toys</a></li>
+                        </ul>
+                    </li>
+                    <li class=" py-3 mx-8px">
+                        <a href="./product.html"
+                            class="text-lg font-medium leading-7 duration-500 hover:text-main-color aa relative">Shop<i
+                                class="fa-solid fa-chevron-down align-middle text-vs ml-2 relative"></i>
+                        </a>
+                        <div
+                            class=" mx-auto top-24 absolute lg:left-5% left-2.5% right-2.5% lg:right-5% rounded-lg py-4 px-5 border-1  border-solid bg-white z-40 ii">
+                            <ul class="grid grid-cols-4 gap-6 ">
+                                <div>
+                                    <h3 class="mb-3">Board Games</h3>
+                                    <div>
+                                        <ul class="text-sm">
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Bath
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Musical
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Soft
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Baby
+                                                    Rattles</a>
+                                            </li>
+                                        </ul>
+                                        <a href="./nothing.html">
+                                            <img class="rounded-10" src="./images/header/header div-1 (1) img.avif"
+                                                alt="Toys"></a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class=" mb-3">Board Games</h3>
+                                    <div>
+                                        <ul class="text-sm">
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Bath
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Musical
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Soft
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Baby
+                                                    Rattles</a>
+                                            </li>
+                                        </ul>
+                                        <a href="./nothing.html">
+                                            <img class="rounded-10" src="./images/header/header div-1 (2) img.jpg"
+                                                alt="Toys"></a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-3">Board Games</h3>
+                                    <div>
+                                        <ul class="text-sm">
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Bath
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Musical
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Soft
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Baby
+                                                    Rattles</a>
+                                            </li>
+                                        </ul>
+                                        <a href="./nothing.html">
+                                            <img class="rounded-10" src="./images/header/header div-1 (3) img.jpg"
+                                                alt="Toys"></a>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <h3 class="mb-3">Board Games</h3>
+                                    <div>
+                                        <ul class="text-sm">
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Bath
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Musical
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Soft
+                                                    Toys</a>
+                                            </li>
+                                            <li>
+                                                <a href="./product.html"
+                                                    class="duration-500 hover:text-main-color inline-block  mb-3">Baby
+                                                    Rattles</a>
+                                            </li>
+                                        </ul>
+                                        <a href="./nothing.html">
+                                            <img class="rounded-10" src="./images/header/header div-1 (4) img.jpg"
+                                                alt="Toys"></a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-8px"><a href="./product.html"
+                            class="text-lg relative duration-500 hover:text-main-color aol">Barth Toys </a>
+                    </li>
+                    <li class="mx-8px"><a href="./product.html"
+                            class="text-lg relative duration-500 hover:text-main-color aol">Soft Toys </a>
+                    </li>
+
+
+
+                    <li class="ew2 mx-8px">
+                        <a href="./News.html" class="duration-500 hover:text-main-color aol text-lg aol relative">Blods
+                            <i class="fa-solid fa-chevron-down align-middle text-vs ml-2 relative"></i>
+                        </a>
+
+                        <div
+                            class="hidden mx-auto top-133px xl:top-95px absolute lg:left-5% left-2.5% right-2.5% lg:right-5% rounded-lg py-4 px-5 border-1  border-solid bg-white z-40">
+                            <ul class="grid grid-cols-4 gap-6">
+                                <div class="text-center">
+                                    <div>
+                                        <a href="./News.html">
+                                            <img class="mb-1 rounded-xl" src="./images/header/header div-2 (1) img.webp"
+                                                alt="Toys"></a>
+                                        <a class="mb-1" href="./News.html">Donec Placerat, Dolor Ac Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center">
+                                    <div>
+                                        <a href="./News.html">
+                                            <img class="mb-1 rounded-xl" src="./images/header/header div-2 (2) img.webp"
+                                                alt="Toys"></a>
+                                        <a class="mb-1" href="./News.html">Donec Placerat, Dolor Ac Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center">
+                                    <div>
+                                        <a href="./News.html">
+                                            <img class="mb-1 rounded-xl" src="./images/header/header div-2 (3) img.webp"
+                                                alt="Toys"></a>
+                                        <a class="mb-1" href="./News.html">Donec Placerat, Dolor Ac Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center">
+                                    <div>
+                                        <a href="./News.html">
+                                            <img class="mb-1 rounded-xl" src="./images/header/header div-2 (4) img.webp"
+                                                alt="Toys"></a>
+                                        <a class="mb-1" href="./News.html">Donec Placerat, Dolor Ac Tristique</a>
+                                        <p><i class="fa-solid fa-calendar-days mr-2"></i>08 Feb 22</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="flex items-center">
+
+                <a href="#"><svg
+                        class="mr-2 sm:mr-5 hover:fill-gray-400 w-20px stroke-30 stroke-white h-20px md:w-30px md:h-30px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                    </svg></a>
+
+                <a href="#"><svg
+                        class="hover:fill-gray-400 stroke-15 stroke-white mr-2 sm:mr-5 hidden md:inline w-20px h-20px md:w-30px md:h-30px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+                    </svg></a>
+
+                <a href="#"><svg class="hover:fill-gray-400 mr-2 sm:mr-5 w-20px h-20px md:w-26px md:h-26px"
+                        viewBox="0 0 23.18 24">
+                        <path id="admin"
+                            d="M11.853.266a6.3,6.3,0,0,0-6.177,6.4,6.467,6.467,0,0,0,2.769,5.333A11.976,11.976,0,0,0,.264,23.462a.815.815,0,0,0,.226.569.76.76,0,0,0,.549.234H22.674a.787.787,0,0,0,.77-.8,11.975,11.975,0,0,0-8.179-11.469,6.465,6.465,0,0,0,2.772-5.333A6.3,6.3,0,0,0,11.853.266Zm0,1.594a4.711,4.711,0,0,1,4.637,4.8,4.711,4.711,0,0,1-4.637,4.8,4.706,4.706,0,0,1-4.631-4.8A4.706,4.706,0,0,1,11.853,1.859Zm0,11.2a10.113,10.113,0,0,1,9.9,9.6H1.964A10.107,10.107,0,0,1,11.853,13.062Z"
+                            transform="translate(-0.264 -0.266)"></path>
+                    </svg></a>
+
+                <a href="#"><svg class="hover:fill-gray-400 w-20px h-20px md:w-33px md:h-33px" viewBox="0 0 32 32">
+                        <path
+                            d="M23.52,29h-15a5.48,5.48,0,0,1-5.31-6.83L6.25,9.76a1,1,0,0,1,1-.76H24a1,1,0,0,1,1,.7l3.78,12.16a5.49,5.49,0,0,1-.83,4.91A5.41,5.41,0,0,1,23.52,29ZM8,11,5.11,22.65A3.5,3.5,0,0,0,8.48,27h15a3.44,3.44,0,0,0,2.79-1.42,3.5,3.5,0,0,0,.53-3.13L23.28,11Z">
+                        </path>
+                        <path
+                            d="M20,17a1,1,0,0,1-1-1V8a3,3,0,0,0-6,0v8a1,1,0,0,1-2,0V8A5,5,0,0,1,21,8v8A1,1,0,0,1,20,17Z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container rounded-10 px-5px py-9px bg-gray-light text-sm">
+        <div class="px-15px flex items-center justify-start">
+            <a class="mr-2" href="./index.html">Home</a>
+            <i class="fa-regular fa-angle-right font-bold align-middle mr-2 inline-block"></i>
+            <p class="text-sm">Create Account</p>
+        </div>
+    </div>
+
+    <h1 class="text-me lg:text-ql mt-15px mb-30px text-center">Create Account</h1>
+
+    <section class="container">
+        <div class="w-full md:w-50% mx-auto">
+            <form action="">
+                <div class="relative myinput">
+                    <input required autofocus
+                        class="border-2 mb-22px inline-block px-15px pt-4 pb-2 border-gray-300 rounded-4 w-full text-sm"
+                        type="text">
+                    <label class="absolute duration-300 text-lg top-9px tracking-nother left-4 text-opositnew"
+                        for="">First Name</label>
+                </div>
+                <div class="relative myinput">
+                    <input required
+                        class="border-2 mb-22px inline-block px-15px pt-4 pb-2 border-gray-300 rounded-4 w-full text-sm"
+                        type="text">
+                    <label class="absolute duration-300 text-lg top-9px tracking-nother left-4 text-opositnew"
+                        for="">Last Name</label>
+                </div>
+                <div class="relative myinput">
+                    <input required
+                        class="border-2 mb-22px inline-block px-15px pt-4 pb-2 border-gray-300 rounded-4 w-full text-sm"
+                        type="email">
+                    <label class="absolute duration-300 text-lg top-9px tracking-nother left-4 text-opositnew"
+                        for="">Email</label>
+                </div>
+                <div class="relative myinput">
+                    <input required
+                        class="border-2 mb-22px inline-block px-15px pt-4 pb-2 border-gray-300 rounded-4 w-full text-sm"
+                        type="password">
+                    <label class="absolute duration-300 text-lg top-9px tracking-nother left-4 text-opositnew"
+                        for="">Password</label>
+                </div>
+                <button type="submit"
+                    class="bg-main-color newcolor hover:bg-black px-3 py-2 rounded-10 text-white inline-block mt-22px duration-200">Create</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- here<< -->
+    <!-- Footer<<<<<<<<<<<<<<<<< -->
+    <footer class="relative mt-32">
+        <div class="w-full absolute top-[-5rem]">
+            <div
+                class="flex justify-between items-center flex-wrap md:flex-nowrap container lg:w-90% bg-extra-gray rounded-lg px-7 py-10">
+                <h3 class="lg:hidden block mx-auto align-middle mb-5 md:mb-0 text-xl">SIGN UP FOR NEWSLETTER</h3>
+                <div class="hidden lg:flex items-center">
+                    <img class="w-20 h-16 my-auto" src="./images/icons&logo/email.png" alt="logo">
+                    <h3 class="ml-2 tracking-nother">SIGN UP FOR<br>NEWSLETTER</h3>
+                </div>
+                <div class="hidden lg:block w-2px h-10 bg-gray-300 my-auto"></div>
+                <div class="hidden lg:block">
+                    <p class="text-ssc xl:text-sm">Subscribe to the weekly newsletter for<br>all the latest updates</p>
+                </div>
+                <form class="w-full md:w-1/2 lg:w-45% flex">
+                    <div class="relative myinput w-4/5">
+                        <input required
+                            class="border-2 inline-block w-full px-15px pt-5 pb-2 border-gray-300 rounded-4 text-sm"
+                            type="text">
+                        <label class="absolute duration-300 text-lg top-13px tracking-nother left-4 text-opositnew"
+                            for="">Email</label>
+                    </div>
+                    <button
+                        class="p-3 bg-main-color newcolor text-white hover:bg-black duration-500 rounded-r-lg inline-block"
+                        type="submit">Subscribe</button>
+                </form>
+
+            </div>
+        </div>
+
+
+        <main class="bg-main-color newcolor text-white pt-60px">
+            <div class="flex container justify-between pb-5 pt-60px flex-wrap lg:flex-nowrap">
+
+                <div class="w-full mb-6 lg:mb-0 lg:w-1/3 px-4">
+                    <div class="my-auto mb-4">
+                        <a href="./index.html"><img class="w-[268px]" src="./images/icons&logo/white_270x.webp"
+                                alt="logo"></a>
+                    </div>
+                    <p class="mb-5 tracking-nother leading-45px">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Perferendis
+                        doloremque sit, sed repellendus et cum temporibus numquam ipsam odio similique, quam ex
+                        architecto pariatur corporis aliquam quasi, ab sapiente</p>
+                    <div class="flex">
+                        <a href="https://www.instagram.com/m7mdk_f/" class="mx-6px hover:scale-105 duration-150">
+                            <i
+                                class="fa-brands fa-twitter bg-white text-black flex items-center justify-center w-10 text-center text-xl p-10px rounded-lg hover:text-white hover:bg-black duration-300"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100010117234183"
+                            class="mx-6px hover:scale-105 duration-150">
+                            <i
+                                class="fa-brands fa-facebook-f bg-white text-black flex items-center justify-center w-10 text-center text-xl p-10px rounded-lg hover:text-white hover:bg-black duration-300"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100042162248638"
+                            class="mx-6px hover:scale-105 duration-150">
+                            <i
+                                class="fa-brands fa-pinterest bg-white text-black flex items-center justify-center w-10 text-center text-xl p-10px rounded-lg hover:text-white hover:bg-black duration-300"></i>
+                        </a>
+                        <a href="https://www.instagram.com/marwan_nasser_2004/"
+                            class="mx-6px hover:scale-105 duration-150">
+                            <i
+                                class="fa-brands fa-instagram bg-white text-black flex items-center justify-center w-10 text-center text-xl p-10px rounded-lg hover:text-white hover:bg-black duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="px-4 w-full md:w-1/3 lg:w-22.222% mb-5 md:mb-0">
+                    <h3 class="mb-3 hidden md:block md:mb-9">Service</h3>
+                    <button onclick="down('showen1')" class="block md:hidden hover:scale-105 duration-150">
+                        <h3 class="mb-3 md:mb-9">Service</h3>
+                    </button>
+                    <ul id="showen1" class=" hidden md:block">
+                        <li><a href="./Faq.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">FAQ</a>
+                        </li>
+                        <li><a href="./About.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">About
+                                Us</a>
+                        </li>
+                        <li><a href="./Shipping.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">Shipping</a>
+                        </li>
+                        <li><a href="./Privacy.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">Privacy
+                                Policy</a></li>
+                        <li><a href="./Contact.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="px-4 w-full md:w-30% lg:w-22.222% mb-5 md:mb-0">
+                    <h3 class="mb-3 hidden md:block md:mb-9">Extras</h3>
+                    <button onclick="down('showen2')" class="click block md:hidden hover:scale-105 duration-150">
+                        <h3 class="mb-3 md:mb-9">Extras</h3>
+                    </button>
+                    <ul id="showen2" class=" hidden md:block">
+                        <li><a href="./Search.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">Search</a>
+                        </li>
+                        <li><a href="./News.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">News</a>
+                        </li>
+                        <li><a href="./wishlist.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">Wishlist</a>
+                        </li>
+                        <li><a href="./Collections.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">All
+                                Collections</a></li>
+                        <li><a href="product.html"
+                                class="leading-9 md:leading-mine tracking-nother hover:text-black duration-300">All
+                                Products</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="px-4 w-full md:w-35% lg:w-22.222% mb-5 md:mb-0">
+                    <h3 class="mb-3 hidden md:block md:mb-9">Contact Us</h3>
+                    <button onclick="down('showen3')" class="click block md:hidden hover:scale-105 duration-150">
+                        <h3 class="mb-3 md:mb-9">Contact Us</h3>
+                    </button>
+                    <ul id="showen3" class="leading-9 hidden md:block md:leading-mine">
+                        <li>
+                            <i class="fa-solid fa-location-dot mr-2"></i>
+                            <p class="inline">demo store United States.</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            <p class="inline">0123-456-789</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope mr-2"></i>
+                            <p class="inline">demo@demo.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="px-4 container   hidden lg:block">
+                <div class="px-60px py-10 mx-auto text-center">
+                    <div class="px-6 hover:text-black hover:border-black duration-300 inline border-r-2 "><a
+                            href="./nothing.html" class="leading-mine">Polos</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Skirts</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Trousers</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Overalls</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Denim</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Mittens</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Coat</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Sweater</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">T-Shirt</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Jeans</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Socks</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Shorts</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Singlet</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Tracksuit</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Diaper</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Jacket</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Baby Apron</a></div>
+                    <div class="px-6 inline hover:text-black duration-300 hover:border-black border-r-2"><a
+                            href="./nothing.html" class="leading-mine">Socks</a></div>
+                    <div class="px-6 inline hover:text-black duration-300"><a href="./nothing.html"
+                            class="leading-mine">Beanie</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="container   flex flex-wrap md:flex-nowrap justify-between py-3 items-center">
+            <div class="flex w-full justify-center md:justify-start mb-2 md:w-1/2 md:mb-0">
+                <p>&copy; 2022,</p>
+                <a class="tracking-wider text-ten lg:text-sm" target="_blank"
+                    href="https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">Birthblessing-toys
+                    Powered by Shopify</a>
+            </div>
+            <div class="w-full justify-center text-center md:w-1/2 px-4 flex md:justify-end">
+                <img class="w-8" src="./images/icons&logo/visa.png" alt="">
+                <img class="w-8 ml-2" src="./images/icons&logo/Mastercard-Logo.wine.png" alt="">
+                <img class="w-8 ml-2" src="./images/icons&logo/american.png" alt="">
+                <img class="w-8 ml-2" src="./images/icons&logo/paybal.png" alt="">
+                <img class="w-8 ml-2" src="./images/icons&logo/diners club.png" alt="">
+                <img class="w-8 py-1 ml-2" src="./images/icons&logo/discover.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <div id="colorful" class="fixed right-0 top-32 bg-white shadow-2xl border-1 pl-2 py-1 pr-3 translate-x-6 duration-500 rounded-l-full z-50">
+        <button onclick="down('colorstyle')" id="circleAnime" class="p-5">
+        </button>
+        <div id="colorstyle"
+            class="bg-white hidden shadow-2xl p-5 w-[250px] h-[270px] rounded-10 absolute right-9 top-60px text-center">
+            <h3 class="uppercase">live settings</h3>
+            <p class="">Theme Color</p>
+            <div class="flex flex-wrap mt-7 justify-between gap-y-5">
+                <button onclick="pagecolor(this)" class="px-23% py-4 rounded-10 cont bg-main-color"></button>
+                <button onclick="pagecolor(this)" class="px-23% py-4 rounded-10 cont bg-[#136F63]"></button>
+                <button onclick="pagecolor(this)" class="px-23% py-4 rounded-10 cont bg-[#B23A48]"></button>
+                <button onclick="pagecolor(this)" class="px-23% py-4 rounded-10 cont bg-black"></button>
+                <button onclick="pagecolor(this)" class="px-23% py-4 rounded-10 cont bg-[#005f73]"></button>
+                <button onclick="pagecolor(this)" class="px-23% py-4 rounded-10 cont bg-[#6B705C]"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/all.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                document.getElementById('scrollup').style.display = 'block';
+            }
+            else {
+                document.getElementById('scrollup').style.display = 'none';
+            }
+        });</script>
+</body>
+
+</html>
